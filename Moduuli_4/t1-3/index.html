@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV search</title>
+  <script src="tv.js" defer></script>
+</head>
+<body>
+  <h1>TV series search</h1>
+
+  <form id="search-form" action="https://api.tvmaze.com/search/shows" method="get">
+    <input type="text" id="query" name="q" required>
+    <button type="submit">Search</button>
+  </form>
+
+  <section id="results"></section>
+</body>
+</html>
